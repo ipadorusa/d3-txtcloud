@@ -1,0 +1,20 @@
+{
+  "name": "@saramin/ui-d3-txtcloud",
+  "version": "1.0.7",
+  "description": "",
+  "main": "./src/d3-txtcloud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://sri-git.saraminhr.co.kr/uidev/npm/ui-d3-txt-cloud"
+  },
+  "author": "ipadorusa",
+  "license": "ISC",
+  "dependencies": {
+    "@saramin/ui-d3-helper": "^1.0.0",
+    "@saramin/ui-d3-selector": "^1.0.0",
+    "d3-cloud": "^1.2.5"
+  }
+}

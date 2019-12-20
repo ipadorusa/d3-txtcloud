@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>npm-package</title>
+    <link rel="stylesheet" type="text/css" href="https://www.saramin.co.kr/sri_css/company/pattern.css">
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="box">
+        <h1>textcloud</h1>
+        <div class="tblType">
+            <table>
+                <colgroup>
+                    <col style="width:15%">
+                    <col style="width:13%">
+                    <col style="width:12%">
+                    <col style="width:30%">
+                    <col style="width:30%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">설명</th>
+                    <th scope="col">비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>w</td>
+                    <td>number</td>
+                    <td>134</td>
+                    <td>차트의 넓이</td>
+                    <td>넓이는 최종 w 으로 생성된다.</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>number</td>
+                    <td>134</td>
+                    <td>차트의 높이</td>
+                    <td>높이는 최종 h 으로 생성된다.</td>
+                </tr>
+                <tr>
+                    <td>wrapClass</td>
+                    <td>string</td>
+                    <td>class정할수 있다</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="columns">
+            <div class="wrap_chart chart09" style="margin-left:150px">
+                <h2>TEXTCLOUD</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="test/build.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var data1 = [
+            [
+                [
+                    {item: "학점", value:31, character:''},
+                    {item: "대외활동", value:20, character: ''},
+                    {item: "수상내역", value:50, character: ''},
+                    {item: "자격증", value:90, character: 'y'},
+                    {item: "보유기술", value:90, character: 'y'},
+                    {item: "어학시험", value:50, character: ''},
+                    {item: "경력", value:40, character: ''}
+                ]
+            ]
+        ];
+
+        new UI.TxtCloud('.chart09',{
+            w: 460,
+            h: 180,
+            wrapClass: 'TxtCloud'
+        },data1);
+    });
+</script>
+</body>
+</html>
